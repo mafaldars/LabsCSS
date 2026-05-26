@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3 - CSS</title>
+    <style>
+        body {
+            background-color: #1d1f21;
+            color: #c5c8c6;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 1.5em;
+            font-family: sans-serif;
+        }
+
+        h1, h3 {
+            color: #b5bd68;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        ul, ol {
+            margin-left: 1em;
+            margin-bottom: 2em;
+        }
+
+        .circle {
+            list-style-type: circle;
+        }
+
+        .image {
+            list-style-image: url(../Lab3/imagens/marca.png) ;
+
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        .style {
+            list-style-type: upper-roman;
+        }
+
+        ol li {
+            margin: 0.5em 0.5em;
+        }
+
+        a:link {
+            color: #696;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #699;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #c93;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #900;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listas e Ligações</h1>
+
+    <p>
+        <a href="#primeiroh3">ir para h3 - Listas não numeradas</a>
+    </p>
+
+    <p>
+        <a href="#segundoh3">ir para h3 - Listas numeradas</a>
+    </p>
+
+    <p>
+        <a href="#terceiroh3">ir para h3 - Ligações</a>
+    </p>
+
+
+        <a href="">
+            <h3 id="primeiroh3">Listas não numeradas</h3>
+        </a>
+
+    <p>
+        De seguida vamos listar diversos itens utilizando uma lista não numerada.
+        Uma lista não numerada produz-se com a etiqueta &ltul&gt.
+    </p>
+
+    <ul>
+        <li>Primeiro item da lista não numerada</li>
+        <li>Segundo item da lista não numerada</li>
+        <li>Adivinhe...</li>
+    </ul>
+
+    <p>
+        Outra lista não numerada, desta vez com outro símbolo para as marcas...
+    </p>
+
+    <ul class="circle">
+        <li>Primeiro item da lista não numerada</li>
+        <li>Segundo item da lista não numerada</li>
+        <li>Adivinhe...</li>
+    </ul>
+
+    <p>
+        Mais outra lista não numerada. Esta utiliza uma imagem como marca.
+    </p>
+
+    <ul class="image">
+        <li>Primeiro item da lista não numerada</li>
+        <li>Segundo item da lista não numerada</li>
+        <li>Adivinhe...</li>
+    </ul>
+
+    <p>
+        Uma última lista não numerada, com uma imagem por item.
+    </p>
+
+    <ul>
+        <li style="list-style-image: url(imagens/safari.png);">Safari</li>
+        <li style="list-style-image: url(../Lab3/imagens/firefox.png);">Firefox</li>
+    </ul>
+
+    <a href=""></a>
+        <h3 id="segundoh3">Listas Numeradas</h3>
+    
+
+    <p>
+        Segue-se uma lista numerada. Uma lista numerada produz-se com a etiqueta &lt;ol&gt;.
+    </p>
+
+    <ol>
+        <li>Alberto</li>
+        <li>Armando</li>
+        <li>António</li>
+    </ol>
+
+    <p>
+        Outra lista numerada, desta vez com outro tipo de numeração...
+    </p>
+
+    <ol class="style">
+        <li>Alberto</li>
+        <li>Armando</li>
+        <li>António</li>
+    </ol>
+
+        <h3 id="terceiroh3">Ligações</h3>
+    
+    <p>
+        As ligações são um dos conceitos mais importantes de uma página HTML.
+        Aliás, as letras HT referem-se a hipertexto e isto consiste em texto com (hiper)ligações para outros documentoos ou partes do próprio documento.
+    </p>
+
+    <p>
+        Para regressar ao topo do documento siga <a href="parte1.html">esta</a> ligação.
+    </p>
+
+    <p>
+        Também podemos regressar através <a href="">desta</a> ligação.
+    </p>
+
+    <p>
+        Uma <a href="#listas-nao-numeradas">ligação</a> para a zona das listas não numeradas. Esta outra <a href="parte1.html#listas-nao-numeradas">ligação</a> também leva ao mesmo local.
+    </p>
+    
+</body>
+</html>
