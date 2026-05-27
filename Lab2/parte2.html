@@ -23,6 +23,11 @@
             text-align: justify;
         }
 
+        .terceiroparagrafo {
+            text-decoration: underline overline wavy;
+            text-transform: capitalize;
+        }
+
         blockquote {
             background-color: rgb(249, 249, 249);
             border-left-style: solid;
@@ -40,6 +45,63 @@
             size: 28pt;
             color: rgb(255, 145, 0);
             margin: 0;
+        }
+
+        blockquote > p::before, blockquote > p::after {
+            quotes: '\201c' '\201D';
+            color: rgb(204, 204, 204);
+            font-size: 2.5em;
+            line-height: 0.5em;
+        }
+
+        blockquote p::before {
+            content: open-quote;
+        }
+
+        blockquote p::after {
+            content: close-quote;
+        }
+
+        span {
+            font-weight: bolder;
+            font-variant: small-caps;
+
+        }
+
+        pre {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 12pt;
+        }
+
+        pre::first-line {
+            font-weight: bold;
+        }
+
+        h2.styles {
+            font-style: italic;
+            text-transform: capitalize;
+            font-variant: small-caps;
+            text-shadow: -2px -2px 5px rgb(130, 143, 122);
+        }
+
+        h2 + p {
+            text-align: left;
+            margin-left: 2em;
+            margin-right: 2em;
+            text-align-last: center;
+            animation-name: dir_para_esq;
+            animation-duration: 1s;
+        }
+
+        @keyframes dir_para_esq {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+            to {
+                margin-left: 2em;
+                width: 100%;
+            }
         }
 
         
@@ -66,7 +128,7 @@
         </p>
     </blockquote>
 
-    <p>
+    <p class="terceiroparagrafo">
         Ficámos a conversar sobre HTML e CSS, bem dispotos, até o dia nascer. 
         Já agora, eis uma regra de CSS:
     </p>
@@ -80,6 +142,12 @@
                 margin: 0px;
             }
     </pre>
+
+    <h2 class="styles">lorem ipsum dolor</h2>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam sapiente facilis voluptas ratione magnam nisi ducimus blanditiis error eligendi eveniet, quibusdam, accusantium a impedit similique quas. Ipsa accusantium incidunt unde.
+    </p>
     
 </body>
 </html>
