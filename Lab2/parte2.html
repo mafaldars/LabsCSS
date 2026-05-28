@@ -8,8 +8,10 @@
 
     <!-- Seguem-se os estilos da folha de estilos -->
     <style>
-        @import url ('https://fonts.googleapis.com/css?family=Sunflower:300');
-        @import url ('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
+        @import url('https://fonts.googleapis.com/css?family=Sunflower:300');
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Passion+One:wght@400;700;900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital@0;1&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        
 
         body {
             background-color: rgb(230, 238, 248);
@@ -23,10 +25,6 @@
             text-align: justify;
         }
 
-        .terceiroparagrafo {
-            text-decoration: underline overline wavy;
-            text-transform: capitalize;
-        }
 
         blockquote {
             background-color: rgb(249, 249, 249);
@@ -47,18 +45,19 @@
             margin: 0;
         }
 
-        blockquote > p::before, blockquote > p::after {
+        blockquote > p::before, 
+        blockquote > p::after {
             quotes: '\201c' '\201D';
             color: rgb(204, 204, 204);
             font-size: 2.5em;
             line-height: 0.5em;
         }
 
-        blockquote p::before {
+        blockquote > p::before {
             content: open-quote;
         }
 
-        blockquote p::after {
+        blockquote > p::after {
             content: close-quote;
         }
 
@@ -69,7 +68,7 @@
         }
 
         pre {
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Ubuntu Mono', 'Courier New', Courier, monospace;
             font-size: 12pt;
         }
 
@@ -96,15 +95,13 @@
         @keyframes dir_para_esq {
             from {
                 margin-left: 100%;
-                width: 300%;
+                width: 50%;
             }
             to {
                 margin-left: 2em;
                 width: 100%;
             }
         }
-
-        
 
     </style>
 </head>
@@ -128,7 +125,8 @@
         </p>
     </blockquote>
 
-    <p class="terceiroparagrafo">
+    <p style="text-decoration: underline overline wavy;
+            text-transform: capitalize;">
         Ficámos a conversar sobre HTML e CSS, bem dispotos, até o dia nascer. 
         Já agora, eis uma regra de CSS:
     </p>
