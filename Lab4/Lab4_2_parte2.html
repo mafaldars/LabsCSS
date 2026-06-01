@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+            border: thick solid red;
+            height: 500px;
+            width: 500px;
+            top: 100px;
+            left: 100px;
+            position: absolute;
+            margin: 50px;
+            
+        }
+
+        #caixa1 {
+            border: 10px solid black;
+            padding: 10px;
+            height: 50%;
+            width: 50%;
+            top: 25%;
+            left: 25%;
+            position: absolute;
+            
+        }
+
+        #caixa2 {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            z-index: -1;
+            top: -100px;
+        }
+
+        #caixa3 {
+            background-color: yellow;
+            width: 80px;
+            height: 80px;
+            position: static;
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa1">
+        <div id="caixa2">
+            <p style="color: white;">Algum texto de teste.</p>
+
+        </div>
+
+        <div id="caixa3">
+
+        </div>
+        
+    </div>
+    
+</body>
+</html>
